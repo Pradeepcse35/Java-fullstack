@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selectors Demo</title>
+	<style>
+/* Class Selector */
+.para {
+	background-color: yellow;
+}
+
+/* Element Selector */
+h1 {
+	color: red;
+}
+
+/* ID Selector */
+#para-id {
+	font-size: 24px;
+}
+
+/* Universal Selector */
+* {
+	margin: 10px;
+	padding: 10px;
+}
+
+/* Grouping Elements */
+.container p, .container span {
+	color: blue;
+}
+
+/* Grouping Elements with Class */
+.para, #para-id {
+	font-style: italic;
+}
+</style>
+</head>
+<body>
+	<h1>I am Pradeep</h1>
+	<p class="para">I have undergoing training in SLZ</p>
+	<p id="para-id">The name of the course is Java Full stack</p>
+	<div class="container">
+		<p>this three months course </p>
+		<span>Span element</span>
+	</div>
+</body>
+</html>
