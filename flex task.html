@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex task boxes</title>
+    <style>
+    .container{
+    display: flex;
+    background-color: 10px solid rgb(71, 68, 68);
+    height: 90vh;
+    flex-wrap: wrap;
+    align-content:start;
+    column-gap: 2em;
+    row-gap: 2em;
+
+}
+
+
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    text-align: center;
+}
+.box1{
+    background-color: rgb(112, 15, 139);
+}
+.box2{
+    background-color: rgb(68, 107, 180);
+}
+.box3{
+    background-color: rgb(189, 83, 166);
+}
+.box4{
+    background-color: rgb(85, 153, 168);
+}
+.box5{
+    background-color: rgb(65, 109, 152);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <div class="box1">header</div>
+         <div class="box2">sidebar</div>
+         <div class="box3">content-1</div>
+         <div class="box4">content-2</div>
+         <div class="box5">content-5</div>
+         <div class="box1">footer</div>
+        </div>
+    </div>
+</body>
+</html>
