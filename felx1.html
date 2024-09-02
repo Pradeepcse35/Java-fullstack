@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid </title>
+    <style>
+    .container {
+        display:  grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(88, 83, 83);
+        padding: 20px;
+        grid-gap: 10px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        justify-content: center;
+
+    }
+    .head {
+        grid-column: 1 / 4;
+        height: 6em;
+        background-color: rgb(154, 106, 209);
+        border: 5px solid black;
+    }
+    .nav {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        background-color: rgb(37, 148, 139);
+        border: 5px solid black;
+        text-align: center;
+    }
+    .top {
+        grid-column: 2 / 4;
+        height: 10em;
+        background-color: rgb(61, 90, 148);
+        border: 5px solid black;
+    }
+    .left {
+        height: 10em;
+        background-color: rgb(49, 54, 150);
+        border: 5px solid black;
+    }
+    .right
+    {
+        height: 10em;
+        background-color: rgb(85, 85, 214); 
+        border: 5px solid black;   
+    }
+    .footer {
+        grid-column: auto / span 3;
+        height: 4em;
+        background-color: rgb(147, 97, 187);
+        border: 5px solid black;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="head box"><h2 style="color: aliceblue;">Header</h2></div>
+
+        <div class="nav box"><h2  style="color: aliceblue; ">sidebar</h2></div>
+
+        <div class="top box"><h2  style="color: aliceblue;">Java</h2></div>
+
+        <div class="left box"><h2  style="color: aliceblue;">Java Sript</h2></div>
+
+        <div class="right box"><h2  style="color: aliceblue;">Html CSS</h2></div>
+        
+        <div class="footer box"><h2  style="color: aliceblue;">Footer</h2></div>
+    </div>
+</body>
+</html>
